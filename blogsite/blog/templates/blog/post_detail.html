@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="card border-primary mb-3" style="max-width: 50rem; margin: 40px 0 0 370px;">
+    <div class="card-header">{{ post.added_at }} | {{ post.author }}</div>
+    <div class="card-body">
+      <h4 class="card-title">{{ post.title }}</h4>
+      <p class="card-text">{{ post.content }}</p>
+  </div>
+{% endblock %}
